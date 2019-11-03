@@ -1,0 +1,215 @@
+        @import "desktop.css";
+        @import "phone.css";
+        @import "tablet.css";
+/*INDEX*/
+        body {
+            background-image: url("../media/header-footer.jpg");
+            background-size: 100%;
+            margin: 20px;
+        }
+        .blog-header {
+            color: #00ff00;
+            font-size: 50px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+/*navigation*/
+        .navbar {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-areas: "a b c";
+            justify-content: center;
+            align-items: stretch;
+        }
+
+        #navitem1 {
+            grid-area:a;
+        }
+
+        #navitem2 {
+            grid-area:b;
+        }
+
+        #navitem3 {
+            grid-area:c;
+        }
+
+        .navitem {
+            display: flex;
+            flex-direction: row;
+            text-decoration: none;
+            border: 2px solid white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 25px;
+            color: #d0ffce;
+            background-color: hsl(120, 92%, 32%);
+            align-items: center;
+            justify-content: space-around;
+        }
+
+
+
+/*blog post cards*/
+        #card {
+            margin: 5px;
+            padding-right: 5px;
+            padding-left: 5px;
+            padding-bottom: 8px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .card-title {
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+        }
+
+        .card-description {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            margin-bottom: 15px;
+            color: white;
+        }
+
+        .read-button {
+            display: inline-block;
+            border: none;
+            border-radius: 25px;
+            padding: 8px;
+            background-color: #00ff00;
+            font-size: 18px;
+            color: black;
+        }
+
+        .card-one{
+            background-color: black;
+        }
+
+        .card-two{
+            background-color: black;
+        }
+
+        .card-three{
+            background-color: black;
+        }
+
+        .card-four{
+            background-color: black;
+        }
+
+        .card-five{
+            background-color: black;
+        }
+
+        .card-six{
+            background-color: black;
+        }
+
+/*sidebar*/
+        .sidebar-list {
+            list-style: none;
+            padding: 5px;
+            color: white;
+        }
+
+        .sidebar-item {
+            text-decoration: none;
+            color: #d0ffce;
+            padding: 5px;
+            background-color: hsl(120, 92%, 32%);
+            border: 1px solid black;
+        }
+
+        .index-sidebar {
+            color: white;
+            background-color: black;
+        }
+
+
+/*BLOG POST*/
+/*social media*/
+        .social {
+            padding: 10px;
+            justify-items: center;
+            background-color: white;
+            color: black;
+        }
+
+        .smessage {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            text-decoration: underline;
+        }
+
+/*blog post*/
+        .article {
+            background-color: black;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            line-height: 200%;
+        }
+
+        .last-paragraph {
+            font-style: italic;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        .sidebar {
+            background-color: black;
+            color: white;
+        }
+
+/*author*/
+        .author {
+            display: grid;
+            grid-template-rows: auto auto;
+            grid-template-columns: 1fr 6fr;
+            grid-template-areas:
+            "img info"
+            "img info";
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+        }
+
+        .author-img {
+            grid-area: img;
+            border-top-left-radius: 50% 50%;
+            border-top-right-radius: 50% 50%;
+            border-bottom-right-radius: 50% 50%;
+            border-bottom-left-radius: 50% 50%;
+            margin: 10px;
+        }
+
+        .author-info {
+            color: black;
+            grid-area: info;
+            list-style: none;
+        }
+
+        .author-entry {
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: italic;
+        }
+
+/*About*/   
+
+        .about {
+            color: white;
+            margin: 10px;
+        }   
+
+
+
+/*
+TODO: Link images
+TODO: CHOOSE COLORS FOR EVERYTHING!!!!!
+TODO: Style hoverable, clickable, active(for navbar) elements
+TODO: Substitute some divs with other tag names, change CSS accordingly
+TODO: Check for adherence to Style and Formatting Rules for HTML and CSS
+TODO: Make sure all typography/color guidelines are met
+TODO: Make sure all links/buttons are working */
