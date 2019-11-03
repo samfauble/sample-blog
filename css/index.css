@@ -3,7 +3,7 @@
         @import "tablet.css";
 /*INDEX*/
         body {
-            background-image: url("../media/header-footer.jpg");
+            background-image: url("../header-footer.jpg");
             background-size: 100%;
             margin: 20px;
         }
@@ -204,12 +204,3 @@
         }   
 
 
-
-/*
-TODO: Link images
-TODO: CHOOSE COLORS FOR EVERYTHING!!!!!
-TODO: Style hoverable, clickable, active(for navbar) elements
-TODO: Substitute some divs with other tag names, change CSS accordingly
-TODO: Check for adherence to Style and Formatting Rules for HTML and CSS
-TODO: Make sure all typography/color guidelines are met
-TODO: Make sure all links/buttons are working */
